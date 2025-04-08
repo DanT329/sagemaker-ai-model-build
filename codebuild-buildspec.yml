@@ -19,11 +19,11 @@ phases:
           --role-arn $SAGEMAKER_PIPELINE_ROLE_ARN \
           --tags "[{\"Key\":\"sagemaker:project-name\",\"Value\":\"${SAGEMAKER_PROJECT_NAME}\"}, {\"Key\":\"sagemaker:project-id\", \"Value\":\"${SAGEMAKER_PROJECT_ID}\"}]" \
           --kwargs "{ \
-                \"input_s3_url\":\"<INPUT-S3-URL>\", \
-                \"model_package_group_name\":\"<MODEL-PACKAGE-GROUP-NAME>\", \
-                \"pipeline_name_prefix\":\"<PIPELINE-BASE-NAME>\", \
-                \"role\":\"<SAGEMAKER-EXECUTION-ROLE-ARN>\", \
-                \"tracking_server_arn\":\"<TRACKING-SERVER-ARN>\", \
+                \"input_s3_url\":\"s3://sagemaker-us-east-1-726623243461/from-idea-to-prod/xgboost/input/bank-additional-full.csv\", \
+                \"model_package_group_name\":\"mlops-04-08-22-27-00-p-sey7qzmavh1u\", \
+                \"pipeline_name_prefix\":\"from-idea-to-prod-pipeline-07-20-17-29\", \
+                \"role\":\"arn:aws:iam::726623243461:role/service-role/SageMaker-ExecutionRole-20250406T213197\", \
+                \"tracking_server_arn\":\"arn:aws:sagemaker:us-east-1:726623243461:mlflow-tracking-server/mlflow-d-pvcais2hgzxo-07-19-16-54\", \
                 \"region\":\"${AWS_REGION}\", \
                 \"sagemaker_project_name\":\"${SAGEMAKER_PROJECT_NAME}\", \
                 \"sagemaker_project_id\":\"${SAGEMAKER_PROJECT_ID}\", \
